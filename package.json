@@ -1,0 +1,28 @@
+{
+  "name": "building.hypermedia.app",
+  "version": "0.0.0",
+  "description": "Guides to building web apps with Hydra and Hydrofoil",
+  "scripts": {
+    "start": "vuepress dev guides",
+    "build": "vuepress build guides"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/hypermedia-app/building.hypermedia.app.git"
+  },
+  "keywords": [
+    "hydra",
+    "hypermedia",
+    "hateoas",
+    "web components"
+  ],
+  "author": "Tomasz Pluskiewicz <tomasz@t-code.pl>",
+  "license": "MIT",
+  "bugs": {
+    "url": "https://github.com/hypermedia-app/building.hypermedia.app/issues"
+  },
+  "homepage": "https://github.com/hypermedia-app/building.hypermedia.app#readme",
+  "devDependencies": {
+    "vuepress": "^0.14.11"
+  }
+}
