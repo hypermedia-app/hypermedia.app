@@ -1,0 +1,23 @@
+{
+  "name": "building-example",
+  "license": "MIT",
+  "scripts": {
+    "start": "owc-dev-server --open",
+    "start:dev": "webpack-dev-server --mode development --open",
+    "start:dev:legacy": "webpack-dev-server --mode development --legacy",
+    "start:prod": "http-server dist/ -o",
+    "build": "webpack --mode production",
+    "build:stats": "webpack --mode production --profile --json > bundle-stats.json"
+  },
+  "dependencies": {
+    "lit-html": "^1.0.0",
+    "lit-element": "^2.0.1"
+  },
+  "devDependencies": {
+    "owc-dev-server": "^0.3.0",
+    "@open-wc/building-webpack": "^1.2.0",
+    "http-server": "^0.11.1",
+    "webpack-cli": "^3.2.3",
+    "webpack-dev-server": "^3.1.14"
+  }
+}
