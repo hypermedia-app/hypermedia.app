@@ -10,8 +10,10 @@
     "build:stats": "webpack --mode production --profile --json > bundle-stats.json"
   },
   "dependencies": {
-    "lit-html": "^1.0.0",
-    "lit-element": "^2.0.1"
+    "@hydrofoil/hydrofoil-shell": "^0.1.1",
+    "@lit-any/lit-any": "^0.8.1",
+    "lit-element": "^2.0.1",
+    "lit-html": "^1.0.0"
   },
   "devDependencies": {
     "owc-dev-server": "^0.3.0",

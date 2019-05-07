@@ -1,9 +1,10 @@
 import { LitElement, html } from 'lit-element';
+import './plain-shell'
 
 class BuildingExample extends LitElement {
 	render() {
 		return html`
-			<h1>Hello world!</h1>
+			<plain-shell use-hash-urls></plain-shell>
 		`;
 	}
 }
