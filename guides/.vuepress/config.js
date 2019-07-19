@@ -12,7 +12,32 @@ module.exports = {
         sidebar: {
             '/hydrofoil': [
                 '/hydrofoil/',
-                '/hydrofoil/getting-started'
+                '/hydrofoil/getting-started',
+                {
+                    path: '/hydrofoil/shell/overview',
+                    title: 'Shell',
+                    collapsable: false,
+                    children: [
+                        '/hydrofoil/shell/overview',
+                        '/hydrofoil/shell/states',
+                        {
+                            title: 'Design systems',
+                            collapsable: false,
+                            children: [
+                                '/hydrofoil/shell/custom-design',
+                                '/hydrofoil/shell/material-design',
+                            ]
+                        }
+                    ]
+                },
+                {
+                    'title': 'Routing',
+                    collapsable: false,
+                },
+                {
+                    'title': 'Defining views',
+                    collapsable: false,
+                }
             ]
         },
         repo: 'hypermedia-app/building.hypermedia.app',

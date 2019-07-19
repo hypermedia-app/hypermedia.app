@@ -1,4 +1,4 @@
-# Hydrofoil
+# Introduction
 
 Hydrofoil is a set of web components which make it simpler to build single page
 applications driven by a (RESTful) API.
@@ -30,7 +30,7 @@ with Hydra backend.
 
 Project site: [https://routing.hypermedia.app/](https://routing.hypermedia.app/demo/)
 
-It is a small library and custom elements which replace traditional MV* routing.
+It is a small library and custom elements which replaces traditional MV* routing.
 The entire routing is simplified to a simple base URL replacement so that the browser
 location has a 1-1 relation to the API resource URI. 
 
