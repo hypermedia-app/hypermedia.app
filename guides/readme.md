@@ -1,6 +1,6 @@
 ---
 home: true
-heroImage: https://github.com/HydraCG/hydra-cg.com/raw/master/img/logo.png
+heroImage: logo.png
 features:
   - title: Hydrofoil - Single Page App scaffolding
     details: Reduces boilerplate using a set of web components
