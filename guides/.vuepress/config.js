@@ -13,6 +13,10 @@ module.exports = {
             '/hydrofoil': [
                 '/hydrofoil/',
                 '/hydrofoil/getting-started'
+            ],
+            '/hydra-box': [
+                '/hydra-box/',
+                '/hydra-box/getting-started'
             ]
         },
         repo: 'hypermedia-app/building.hypermedia.app',
