@@ -16,7 +16,15 @@ module.exports = {
             ],
             '/hydra-box': [
                 '/hydra-box/',
-                '/hydra-box/getting-started'
+                '/hydra-box/getting-started',
+                {
+                    title: 'Implementing operations',
+                    collapsable: false,
+                    children: [
+                        '/hydra-box/operation-middleware',
+                        '/hydra-box/multiple-queries'
+                    ]
+                }
             ]
         },
         repo: 'hypermedia-app/building.hypermedia.app',
