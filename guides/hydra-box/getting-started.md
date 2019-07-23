@@ -14,7 +14,7 @@ is `https://example.app/` and the terms will be within an `https://example.app/a
 hydra-box is an NPM package:
 
 ```shell
-npm i --save hydra-box
+npm i --save hydra-box express
 ```
 
 ## Create an `ApiDocumentation`
@@ -61,9 +61,9 @@ information about the individual resources and operations.
 
 +<api#Entrypoint> a hydra:Class ;
 +  hydra:title "The root of the API" ;
-+  hydra:descripton "Request this to start navigating the API" ;
++  hydra:description "Request this to start navigating the API" ;
 +  hydra:supportedOperation [
-+  a hydra:SupportedOperation ;
++  a hydra:SupportedOperation, hydra-box:View ;
 +    hydra:title "Get the entrypoint resource" ;
 +    hydra:method "GET"
 +  ]
@@ -79,7 +79,7 @@ against an underlying store.
 
 ```diff
 @prefix hydra: <http://www.w3.org/ns/hydra/core#> .
-+@prefix code: <https://code.declared.at/> .
++@prefix code: <https://code.described.at/> .
 +@prefix hydra-box: <http://hydra-box.org/schema/> .
 
     hydra:title "Get the entrypoint resource" ;
@@ -87,14 +87,14 @@ against an underlying store.
 +    hydra:method "GET" ;
 +    code:implementedBy [
 +      a hydra-box:SparqlQuery ;
-+      code:link <file:hydra/entrypoint.get.sparql>
++      hydra-box:source <file:hydra/entrypoint.get.sparql>
 +    ]
 ```
 
 The simplest possible content of the `hydra/entrypoint.get.sparql` file is a `DESCRIBE <https://example.app/>`
 query.
 
-Fianally, an explicit declaration of the type of the entrypoint resource is necessary so that hydra-box 
+Finally, an explicit declaration of the type of the entrypoint resource is necessary so that hydra-box 
 can set up the express router.
 
 ```diff
