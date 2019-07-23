@@ -1,6 +1,6 @@
 # Getting started
 
-Hydra-box API is an expressjs middleware. Three main steps are necessary to set it up:
+Three main steps are necessary to set up a Hydra API with hydra-box:
 
 1. Create a Hydra ApiDocumentation graph
 1. Add terms to declare how specific operations are implemented
@@ -8,14 +8,6 @@ Hydra-box API is an expressjs middleware. Three main steps are necessary to set 
 
 For the sake of this tutorial, let's assume that the entrypoint and base URI of all resources
 is `https://example.app/` and the terms will be within an `https://example.app/api#` namespace.
-
-## Installation
-
-hydra-box is an NPM package:
-
-```shell
-npm i --save hydra-box express
-```
 
 ## Create an `ApiDocumentation`
 
