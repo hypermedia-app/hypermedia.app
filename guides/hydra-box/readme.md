@@ -8,7 +8,7 @@ It is still in an early stage so currently do have a look at its repository
 
 ## Installation
 
-hydra-box is an NPM package and an express middlware:
+hydra-box is an NPM package and an has to be installed together with Express:
 
 ```shell
 npm i --save hydra-box express
