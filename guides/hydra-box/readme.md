@@ -1,6 +1,6 @@
 # hydra-box
 
-Hydra-box is express.js middleware developed in [Zazuko GmbH][zazuko] and led by
+Hydra-box is an [Express](https://expressjs.com) middleware developed in [Zazuko GmbH][zazuko] and led by
 [Thomas Bergwinkl][bergi].
 
 It is still in an early stage so currently do have a look at its repository
