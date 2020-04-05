@@ -13,6 +13,18 @@ module.exports = {
             '/hydrofoil': [
                 '/hydrofoil/',
                 '/hydrofoil/getting-started'
+            ],
+            '/hydra-box': [
+                '/hydra-box/',
+                '/hydra-box/getting-started',
+                {
+                    title: 'Implementing operations',
+                    collapsable: false,
+                    children: [
+                        '/hydra-box/operation-middleware',
+                        '/hydra-box/multiple-queries'
+                    ]
+                }
             ]
         },
         repo: 'hypermedia-app/building.hypermedia.app',
